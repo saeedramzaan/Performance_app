@@ -45,7 +45,7 @@ class PerformanceController extends Controller
 
         $time_1_decimal = round($time_ms, 1);
      
-        return response()->json($time_1_decimal." seconds");
+        return response()->json($time_1_decimal." Seconds");
 
 
         }
