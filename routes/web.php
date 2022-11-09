@@ -28,18 +28,8 @@ $router->get('/test', function () use ($router) {
     return view('test');
 });
 
-$router->get('/key', function() {
-    return \Illuminate\Support\Str::random(32);
-});
-
-
 
 use Laravel\Lumen\Routing\Router;
-
-// $router->get('/', function () use ($router) {
-
-//     return $router->app->version();
-// });
 
 
 $router->group(['prefix' => 'api'], function () use ($router) {
